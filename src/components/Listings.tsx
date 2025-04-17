@@ -8,7 +8,7 @@ interface Listings {
 }
 
 const Listings = () => {
-    const [listings, setListings] = useState([
+    const [listings, setListings] = useState<Array<Listings>>([
         {
             img: "https://media.vrbo.com/lodging/28000000/27320000/27314000/27313935/e7c3076b.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
             name: "Beach House",
@@ -31,7 +31,7 @@ const Listings = () => {
             {listings.map((listing) => {
                 return (
                     <PropertyTile
-                        key={listings.id}
+                        key={listing.id}
                         img={listing.img}
                         name={listing.name}
                     />
