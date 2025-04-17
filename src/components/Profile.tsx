@@ -2,7 +2,7 @@ import userImg from "../assets/UserImg.webp";
 import PropertyTile from "./PropertyTile";
 import { useState } from "react";
 
-interface RecentStay {
+interface Stay {
     img: string;
     name: string;
     id: number;
@@ -11,7 +11,7 @@ interface RecentStay {
 interface User {
     username: string;
     bio: string;
-    mostRecentStay: RecentStay;
+    mostRecentStay: Stay;
 }
 
 const Profile = () => {
