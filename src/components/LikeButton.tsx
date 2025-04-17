@@ -4,8 +4,9 @@ type LikeProps = {
 };
 
 const LikeButton = ({ liked, setLiked }: LikeProps) => {
+    
     const handleClickLikeButton = () => {
-        liked ? setLiked(false) : setLiked(true);
+        setLiked(!liked)
     };
 
     return liked ? (
